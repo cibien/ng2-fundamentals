@@ -12,7 +12,8 @@ import {
 	EventRouterActivator,
 	EventListResolver,
 	CreateSessionComponent,
-	SessionListComponent
+	SessionListComponent,
+	PipeDuration
 } from './events/index'
 
 import { EventsAppComponent } from './events-app.component'
@@ -40,6 +41,7 @@ import { AuthService } from './user/auth.service'
 		Error404Component,
 		CreateSessionComponent,
 		SessionListComponent,
+		PipeDuration,
 		CollapsibleComponent
 	],
 	providers: [
