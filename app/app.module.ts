@@ -15,7 +15,8 @@ import {
 	SessionListComponent,
 	UpVoteComponent,
 	PipeDuration,
-	VotersService
+	VotersService,
+	LocationValidator
 } from './events/index'
 
 import { EventsAppComponent } from './events-app.component'
@@ -58,7 +59,8 @@ declare let jQuery: Object
 		PipeDuration,
 		CollapsibleComponent,
 		SimpleModalComponent,
-		ModalTriggerDirective
+		ModalTriggerDirective,
+		LocationValidator
 	],
 	providers: [
 		EventService,
