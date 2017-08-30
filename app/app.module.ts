@@ -13,7 +13,9 @@ import {
 	EventListResolver,
 	CreateSessionComponent,
 	SessionListComponent,
-	PipeDuration
+	UpVoteComponent,
+	PipeDuration,
+	VotersService
 } from './events/index'
 
 import { EventsAppComponent } from './events-app.component'
@@ -52,6 +54,7 @@ declare let jQuery: Object
 		Error404Component,
 		CreateSessionComponent,
 		SessionListComponent,
+		UpVoteComponent,
 		PipeDuration,
 		CollapsibleComponent,
 		SimpleModalComponent,
@@ -74,7 +77,8 @@ declare let jQuery: Object
 			useValue: checkDirtyState
 		},
 		EventListResolver,
-		AuthService
+		AuthService,
+		VotersService
 	],
 	bootstrap: [EventsAppComponent]
 })
