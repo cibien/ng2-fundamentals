@@ -9,6 +9,7 @@ import { AuthService } from './auth.service'
 	`]
 })
 export class LoginComponent {
+	loginInvalid = false
 
 	constructor(private authService: AuthService, private router: Router) {
 
@@ -16,7 +17,15 @@ export class LoginComponent {
 
 	login(formValues) {
 		this.authService.loginUser(formValues.userName, formValues.password)
-		this.router.navigate(['events'])
+			.subscribe(res => {
+				if (!res) {
+					this.loginInvalid = true
+				}
+				else {
+					this.router.navigate(['events'])
+				}
+			})
+
 	}
 
 	cancel() {
